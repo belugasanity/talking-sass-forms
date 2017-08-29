@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Information Form</title>
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <!-- Styles -->
+    <link href="style/styling.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<header>
+    <h1>Dr. Doctor</h1>
+</header>
+
+<main>
+
+<h1>Information Form</h1>
+
+<form action="processEmail.php" method="POST" enctype="multipart/form-data" name="patientInfo">
+
+    <fieldset>
+        <h2>Personal Information</h2>
+        <label><p>Name:</p><input name="fullname" value="Jake Brown" type="text" placeholder="full name" pattern="[a-zA-Z0-9 .]{2,99}" required> </label>
+        <label><p>Address:</p><input name="address" value="188 W. 1000 S." type="text" placeholder="address" pattern="[a-zA-Z0-9 .]{3,99}" required> </label>
+        <label><p>Email:</p><input name="email" value="jbrown@email.com" type="email" placeholder="email" required> </label>
+    </fieldset>
+
+
+    <input class="submit" type="submit" value="submit" name="submit" >
+
+</form>
+
+</main>
+
+</body>
+</html>
