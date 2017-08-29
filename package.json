@@ -7,5 +7,17 @@
     "test": "test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belugasanity/talking-sass-forms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/belugasanity/talking-sass-forms/issues"
+  },
+  "homepage": "https://github.com/belugasanity/talking-sass-forms#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "jquery": "^3.2.1"
+  }
 }
