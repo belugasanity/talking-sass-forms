@@ -1,0 +1,42 @@
+/*STYLING FOR THE AJAX FORM*/
+body {
+	background-color: #4286f4;
+	padding-top: 100px;
+	color: white;
+}
+
+.container {
+	width: 500px;
+	margin: auto;
+	border: 1px solid white;
+	border-radius: 10px;
+	background-color: #0055e0;
+	padding: 0 40px 40px 40px;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+.field {
+	padding-bottom: 30px;
+}
+
+.field #name, .field #email, .field #message {
+	width: 100%;
+}
+
+button {
+	width: 100%;
+	padding: 20px 10px;
+	color: blue;
+	border-radius: 5px;
+	background-color: #8cb7ff;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: blue;
+	color: white;
+}
