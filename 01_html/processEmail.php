@@ -8,7 +8,7 @@ $body = $_POST[body];
 
 //BUILD THE EMAIL p.s. this is not to be used on real site. Very unsecure and hackable.
 
-$to = "mike-cowley@hotmail.com";
+$to = "email@email.com";
 $subject = "HTML Form Info";
 $message = "$name has submitted the HTML form. $body $address";
 
