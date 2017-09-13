@@ -12,6 +12,11 @@
     <!--AXIOS file source-->
     <script type="text/javascript" src="../../node_modules/axios/dist/axios.js"></script>
 
+    <!-- QS Library -->
+    <script type="text/javascript" src="../../qs/dist/qs.js"></script>
+
+    <script type="text/javascript" src="../../require.js"></script>
+
 </head>
 <body>
 
@@ -22,8 +27,7 @@
 
 <main>
 
-    <div id="form-messages" class="container2"></div>
-
+    <div id="formMessages" class="container2"></div>
 
     <form id="axios-contact" method="post" action="">
         <div class="field">
@@ -42,7 +46,7 @@
         </div>
 
         <div class="field">
-            <button id="post" type="submit">Send</button>
+            <button id="post" type="button">Send</button>
         </div>
     </form>
 
@@ -50,20 +54,25 @@
 </div>
 
     <script>
-      document.getElementById('post').onclick = function () {
-        axios.post('/server', {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            message: document.getElementById('message').value
-          })
-          .then(function (response) {
-            console.log(response);
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      }
+  //   (function(){
+  //       var formMessages = document.getElementById('formMessages');
+  //       document.getElementById('post').onclick = function () {
+  //       axios.post('/proj2/talking-sass-forms/03_axios/contact.php', {
+  //           name: document.getElementById('name').value,
+  //           email: document.getElementById('email').value,
+  //           message: document.getElementById('message').value
+  //         })
+  //         .then(function (response) {
+  //           console.log(response);
+  //         })
+  //         .catch(function (error) {
+  //           console.log(error);
+  //         });
+  //     };
+  // })();
     </script>
+    <script type="text/javascript" src="server.js"></script>
+
 
 </body>
 </html>

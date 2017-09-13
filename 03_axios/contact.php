@@ -1,15 +1,15 @@
 <?php 
 
-  $name = $_REQUEST['name'];
-  $from = $_REQUEST['from'];
-  $body = $_REQUEST['body'];
+  $name = $_POST[name];
+  $from = $_POST[email];
+  $message = $_POST[message];
 
-  $to = "hiro@mrhiro.com"; //recipient 
+  $to = "austinbroadhead97@gmail.com"; //recipient 
 
   $subject = "RIA Emails"; //subject 
-  $header = "From: ". $name . " <" . $from . ">\r\n";
+  $body = "Name: $name Message: $message";
 
-  if (mail($to, $subject, $body, $header)){
+  if (mail($to, $subject, $body, 'FROM:'.$from)){
     echo 'Your email has been sent!';
   } else {
     echo 'Error: something went wrong.';
