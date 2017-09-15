@@ -1,6 +1,6 @@
 /*STYLING FOR THE AJAX FORM*/
 body {
-	background-color: #f47142;
+	background-color: #777;
 	padding-top: 100px;
 	color: white;
 }
@@ -10,7 +10,7 @@ body {
 	margin: auto;
 	border: 1px solid white;
 	border-radius: 10px;
-	background-color: #bf3200;
+	background-color: rgba(255,255,255,0.3);
 	padding: 0 40px 40px 40px;
 
 }
@@ -28,15 +28,25 @@ h1 {
 }
 
 button {
-	width: 100%;
-	padding: 20px 10px;
-	color: red;
+	float: right;
+	width: 50%;
+	padding: 10px 0;
+	color: #e5e5e5;
+	border: 2px solid #e5e5e5;
 	border-radius: 5px;
-	background-color: #f47142;
+	background-color: transparent;
+	font-size: 1.2em;
 }
 
 button:hover {
 	cursor: pointer;
-	background-color: red;
-	color: white;
+	color: #bada55;
+	border: 2px solid #bada55;
+}
+
+#formMessages{
+	text-align: center;
+	font-size: 1.4em;
+	clear: both;
+	margin-top: 50px;
 }

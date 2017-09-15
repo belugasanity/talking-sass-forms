@@ -7,7 +7,7 @@
   $to = "austinbroadhead97@gmail.com"; //recipient 
 
   $subject = "RIA Emails"; //subject 
-  $body = "Name: $name Message: $message";
+  $body = "Name: $name \r\n Message: $message";
 
   if (mail($to, $subject, $body, 'FROM:'.$from)){
     echo 'Your email has been sent!';
